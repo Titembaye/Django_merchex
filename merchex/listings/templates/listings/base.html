@@ -1,0 +1,19 @@
+ {% load static %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Merchex</title>
+    <link rel="stylesheet" href="{% static 'listings/styles.css' %}">
+</head>
+<body>
+    <a href="{% url 'band-list' %}">Groupes</a>
+    <a href="{% url 'listing-list' %}">Annonces</a>
+    <a href="{% url 'contact' %}">Contact</a>
+    <a href="{% url 'a-propos' %}">A propos</a>
+    {% block content %}
+    {% endblock%}
+</body>
+</html>

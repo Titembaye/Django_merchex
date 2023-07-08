@@ -1,0 +1,22 @@
+# Fichiers spécifiques à l'IDE (par exemple, pour Visual Studio Code)
+.vscode/
+
+# Fichiers de l'environnement virtuel
+env/
+
+# Fichiers générés par Django
+*.pyc
+__pycache__/
+db.sqlite3
+
+# Fichiers de configuration locaux
+local_settings.py
+
+# Fichiers de logs
+logs/
+
+# Fichiers de médias téléchargés
+media/
+
+# Fichiers statiques collectés
+staticfiles/

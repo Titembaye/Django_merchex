@@ -1,0 +1,15 @@
+{% extends 'listings/base.html'%}
+
+{% block content %}
+
+<h1>Ma liste de groupe</h1>
+<a href="{% url 'listing-create' %}">Nouvelle Annonce</a>
+<ul>
+    {% for listing in listings %}
+    <li>
+        <a href="{% url 'listing-detail' listing.id %}">{{listing.title}}</a>
+        -<a href="{% url 'listing-update' listing.id %}">[Editer]</a>
+    </li>
+    {% endfor %}
+</ul>
+{% endblock %}
